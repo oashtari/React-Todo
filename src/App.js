@@ -2,6 +2,7 @@ import React from 'react';
 
 import TodoForm from './components/TodoComponents/TodoForm';
 import TodoList from './components/TodoComponents/TodoList';
+import './components/TodoComponents/Todo.css';
 
 class App extends React.Component {
   // you will need a place to store your state in this component.
@@ -22,7 +23,7 @@ class App extends React.Component {
       todoList: [
         ...this.state.todoList,
         {
-          task: newTodo, id: Date.now(), completed: false
+          task: newTodo, id: Date.now(), complete: false
         }
       ]
     }
